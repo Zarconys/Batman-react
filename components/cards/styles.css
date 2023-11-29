@@ -1,0 +1,67 @@
+.actor-cards-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #000;
+    height: 500px;
+ 
+}
+
+.cards-content{
+    background-color: #000;
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+   
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url(https://noticiasdatv.uol.com.br/media/uploads/artigos_2021/batman-robert-pattinson-foto-divulgacao-warner-bros.jpg);
+}
+
+.banner-2 {
+    background-image: url(https://ellebrasil-wp-images.s3.amazonaws.com/2022/08/origin-118.jpg);
+}
+
+.banner-3 {
+    background-image: url(https://ovicio.com.br/wp-content/uploads/2020/12/20201218-jeffrey_wright_gotham_the_batman_hbo_max_commissioner_gordon-555x555.png);
+}
+
+
+
+@media(max-width:768px){
+    .cards-content{
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+
+    #pos{
+        background-position: 80% 20%;
+    }
+       
+  
+}

@@ -1,0 +1,22 @@
+import React from "react";
+import "./styles.css";
+
+function Cards() {
+  return (
+    <div className="actor-cards-container">
+      <div className="cards-content">
+        <div id="pos" class="card banner-1">
+          Robert Pattison - Batman
+        </div>
+        <div id="pos" class="card banner-2">
+          Zoe Kravitz - Mulher Gato
+        </div>
+        <div id="pos" class="card banner-3">
+          Jeffrey wright - Gordon
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Cards;
